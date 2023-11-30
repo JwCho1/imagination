@@ -1,0 +1,123 @@
+$font-family-default: Pretendard;
+$color-black: #000;
+$color-white: #fff;
+$font-size-large: 24px;
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$background-light: #f5f5f5;
+$background-blue: #0288d1;
+$flex-display-style: inline-flex;
+$font-weight-bold: 700;
+
+.top-three-box {
+  padding-left: 7%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  .top-one,
+  .top-two,
+  .top-three {
+    margin: 0 50px;
+
+    &-span {
+      position: absolute;
+      color: $color-white;
+      font-family: $font-family-default;
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+      display: $flex-display-style;
+      justify-content: center;
+      align-items: center;
+      border-radius: $border-radius-medium;
+      background: $background-blue;
+    }
+
+    &-img {
+      flex-shrink: 0;
+      border-radius: $border-radius-small;
+      background: $background-light;
+    }
+
+    .top-one-liked-score,
+    .top-two-liked-score,
+    .top-three-liked-score {
+      margin: auto;
+      height: 21.35px;
+      flex-shrink: 0;
+      color: $color-black;
+      font-family: $font-family-default;
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+
+      .top-three-like {
+        width: 20px;
+        height: 18.35px;
+        flex-shrink: 0;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .top-one {
+    .top-one-span {
+      transform: translate(-30%, 0%);
+      display: inline-flex;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-one-img {
+      width: 280px;
+      height: 280px;
+    }
+
+    .top-one-liked-score {
+      transform: translate(0%, 80%);
+    }
+  }
+
+  .top-two {
+    .top-two-span {
+      transform: translate(-20%, 0%);
+      display: inline-flex;
+      padding: 5px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-two-img {
+      width: 240px;
+      height: 240px;
+    }
+
+    .top-two-liked-score {
+      transform: translate(5%, 180%);
+    }
+  }
+
+  .top-three {
+    .top-three-span {
+      transform: translate(-10%, 0%);
+      display: inline-flex;
+      padding: 3px 7px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-three-img {
+      width: 220px;
+      height: 220px;
+    }
+
+    .top-three-liked-score {
+      transform: translate(5%, 200%);
+    }
+  }
+}

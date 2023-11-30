@@ -1,0 +1,92 @@
+//_topheader.scss
+
+$font-family-default: Pretendard;
+$color-black: #000;
+$color-white: #fff;
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$button-padding: 7px 15px;
+$border-radius-round: 30px;
+$box-shadow-light: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+// Define Mixins
+@mixin button-style {
+  display: inline-flex;
+  padding: $button-padding;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: $border-radius-round;
+  background: $color-white;
+  box-shadow: $box-shadow-light;
+  color: $color-black; // Duplicate kept as per request
+  font-family: $font-family-default;
+  font-size: $font-size-medium;
+  font-weight: 700;
+  line-height: normal;
+}
+
+// Top Header Styles
+.top-header {
+  display: flex;
+  text-align: center;
+  padding: 5% 5% 2% 5%;
+  align-items: center;
+
+  .leader-title {
+    margin-right: 135px;
+    color: $color-black;
+    font-family: $font-family-default;
+    font-size: $font-size-large;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .week-btn,
+  .alltime-btn {
+    @include button-style;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #245696;
+
+      button {
+        color: #fff;
+      }
+    }
+
+    &.clicked {
+      background-color: #245696;
+
+      button {
+        color: #fff;
+      }
+    }
+
+    button {
+      font-weight: bold;
+      // color: black; // Default text color
+    }
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .week-btn {
+    margin-right: 42.24px;
+  }
+}
+
+.week-btn button,
+.alltime-btn button {
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.clicked {
+    // background-color: #245696;
+  }
+}

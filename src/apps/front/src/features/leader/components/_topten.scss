@@ -1,0 +1,59 @@
+//_topten.scss
+$topten-bg-color: #fff;
+$topten-white-color: #fff;
+$topten-blue-color: #0288d1;
+// $scroll-thumb-color: rgb(121, 121, 121);
+$scroll-thumb-color: #0288d1;
+$scroll-thumb-hover-color: #62c0f3;
+$scroll-track-color: #f9f9f9;
+$background-blue: #0288d1;
+$color-white: #fff;
+
+// Container styles
+.top-ten {
+  display: flex;
+  width: 70%;
+  position: relative;
+  left: 5%;
+  .swiper-container {
+    display: flex;
+    // width: 70%;
+    margin-left: 1%;
+    // padding-left: 30%;
+  }
+}
+
+// Swiper slide
+.swiper-slide {
+  display: flex;
+  right: 7.3%;
+  padding-top: 5%;
+  width: 19%;
+  height: 20rem;
+
+  .top-ten-span {
+    background-color: #0288d1;
+    $topten-blue-color: #0288d1;
+    // transform: translate(0%, 0%);
+    padding: 10px 15px;
+    color: $color-white;
+    position: relative;
+    bottom: 180px;
+    left: 35px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .top-ten-img-size {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    background: #f5f5f5;
+    border-radius: 10%;
+  }
+}
